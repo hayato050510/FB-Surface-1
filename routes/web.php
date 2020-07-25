@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// LP獲得用
+Route::get('app', function () {
+    return view('fb.check'); //確認用LP
+    // return view('fb.noMatch'); //獲得LP(1)
+});
+
+// LP確認用
+Route::get('cccheck', function () {
+    return view('fb.noMatch'); //獲得LP(1)
 });
