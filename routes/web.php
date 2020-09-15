@@ -12,12 +12,15 @@
 */
 
 // LP獲得用
-Route::get('app', function () {
+Route::get('job', function () {
     return view('fb.check'); //確認用LP
+    // return redirect('https://fam-ad.com/ad/p/r?_site=64801&_article=16355'); //獲得LP - ワクワク(fam)
+    
     // return view('fb.noMatch'); //獲得LP(1)
 });
 
 // LP確認用
 Route::get('cccheck', function () {
-    return view('fb.noMatch'); //獲得LP(1)
+    return redirect('https://fam-ad.com/ad/p/r?_site=64801&_article=16355'); //獲得LP - ワクワク(fam)
+    // return view('fb.noMatch'); //獲得LP(1)
 });
